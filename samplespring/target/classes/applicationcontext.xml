@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocal.ion="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="clothes" class="com.tnsiff.samplespring.Clothes"></bean>
+
+<bean id="food" class="com.tnsiff.samplespring.Food"></bean>
+
+<bean id="customer1" class="com.tnsiff.samplespring.Customer">
+<property name="id" value="101"></property>
+<property name="name" value="Althaaf"></property>
+<property name="city" value="chennai"></property>
+
+<property name="s1" ref="food"></property>
+</bean>
+
+<bean id="customer2" class="com.tnsiff.samplespring.Customer">
+<property name="id" value="102"></property>
+<property name="name" value="syed"></property>
+<property name="city" value="chennai"></property>
+
+<property name="s1" ref="clothes"></property>
+</bean>
+
+
+</beans>
